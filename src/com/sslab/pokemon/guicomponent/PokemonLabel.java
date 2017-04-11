@@ -38,6 +38,9 @@ public class PokemonLabel extends JLabel{
                 state = WhacPokemonState.Show;
                 this.popPokemon();
             } else {
+                if(a.nextInt(2)==0)
+                    id = monsterID[a.nextInt(5)];
+
                 state = WhacPokemonState.Hide;
                 this.hidePokemon();
             }
