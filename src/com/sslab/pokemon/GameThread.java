@@ -17,8 +17,6 @@ public class GameThread implements Runnable {
             mainThread.start();
         }
 
-
-
         @Override
         public void run() {
             while(true)
